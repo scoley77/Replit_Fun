@@ -5,9 +5,6 @@ cousins = {
   'our family' : ['Juniper', 'Winry', 'Kylan']
 }
 
-print(cousins['gardners'])
-print(cousins['andersons'][2])
-
 def first_born(dict):
   list = []
   for key in dict.values():
