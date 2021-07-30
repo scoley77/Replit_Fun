@@ -1,7 +1,7 @@
 #good morning, sara coley, here is what we need to do today: or ...here is what needs to be done tomorrow
 user = {
-  'first' : 'Sara',
-  'last' : 'Coley'
+  'first' : 'Waddie',
+  'last' : 'sama'
 }
 
 def greeting():
@@ -13,11 +13,11 @@ def greeting():
       print(arg)
 
   print("What time of day is it?")
-  daytime = input().lower()
+  daytime = input()
 
-  if daytime == 'morning' or daytime == 'noon' or daytime == 'afternoon':
+  if daytime.lower() == 'morning' or daytime.lower() == 'noon' or daytime.lower() == 'afternoon':
     task_intro = 'Here is what needs to be done today:'
-  elif daytime == 'evening' or daytime == 'night':
+  elif daytime.lower() == 'evening' or daytime.lower() == 'night':
     task_intro = 'Here is what needs to get done tomorrow:'
   else:
     task_intro = 'Here is your to-do list:'
