@@ -1,4 +1,4 @@
-#good morning, sara coley, here is what we need to do today: or ...here is what needs to be done tomorrow
+#order of *args and **kwargs is very important!!
 user = {
   'first' : 'Waddie',
   'last' : 'sama'
