@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "repl_python3_ReplitFun"
+version = "0.1.0"
+description = ""
+authors = ["scoley77 <<>>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+bs4 = "^0.0.1"
+inflection = "^0.5.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

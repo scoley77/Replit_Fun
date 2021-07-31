@@ -4,4 +4,5 @@
 # import guessing_game
 # import login
 # import greeting_arguments
-import fizzbuzz
+# import fizzbuzz
+import web_scraper

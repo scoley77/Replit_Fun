@@ -1,10 +1,8 @@
 # fizz for 3x, buzz for 5x, fizzbuzz for both
 
-fizz_range = range(1, 101)
-
-def fizzbuzz(num_list):
-  for num in num_list:
-    if num % 15 == 0:
+def fizzbuzz(max_num):
+  for num in range(1, 1 + max_num):
+    if num % 5 == 0 and num % 3 == 0:
       print('FizzBuzz')
     elif num % 5 == 0:
       print('Buzz')
@@ -13,4 +11,4 @@ def fizzbuzz(num_list):
     else:
       print(num)
 
-fizzbuzz(fizz_range)
+fizzbuzz(100)
