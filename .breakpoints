@@ -23,6 +23,14 @@
         "version": 171,
         "index": 0
       }
+    ],
+    "web_scraper.py": [
+      {
+        "id": "bb48ec85-7bd3-40f6-af50-63e89dfef1e7",
+        "line": 35,
+        "version": 1925,
+        "index": 1263
+      }
     ]
   }
 }
