@@ -11,4 +11,11 @@ def fizzbuzz(max_num):
     else:
       print(num)
 
-fizzbuzz(100)
+print('Max number:')
+while True:
+  answer = float(input())
+  if type(answer) == int or float:
+    fizzbuzz(int(answer))
+    False
+  else:
+    print('Try entering a number...') 

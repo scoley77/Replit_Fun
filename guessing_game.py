@@ -1,7 +1,7 @@
 import random
 
-def guessing_game():
-  answer = random.randint(0, 100)
+def guessing_game(max_num):
+  answer = random.randint(0, max_num)
   while True:
     print('What is your guess?')
     guess = int(input())
@@ -10,7 +10,7 @@ def guessing_game():
       print('yay! you did it!')
       print('play again? Y or N')
       response = input()
-      if response == 'Y':
+      if response.upper() == 'Y':
         guessing_game()
       else:
         print('ok.')
@@ -19,5 +19,12 @@ def guessing_game():
       print('too low!')
     elif guess > answer:
       print('too high!')
-  
-guessing_game()
+
+print('Max number:')
+while True:
+  answer = float(input())
+  if type(answer) == int or float:
+    guessing_game(int(answer))
+    False
+  else:
+    print('Try entering a number...') 
