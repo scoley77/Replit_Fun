@@ -27,21 +27,21 @@ class Waffles:
     
     print('Can I get you anything else?')
     key_ = input()
-    if key_.strip().lower() == 'yes' or key_.strip().lower() == 'yes please':
+    if key_.strip().lower() == 'yes' or key_.strip().lower() == 'yes, please':
       print("Oh?")
       pass_ = input()
       if pass_.strip().lower() == 'cupcakes and sugar':
         print('As you wish; make your order. (1 - 4)')
         secret = float(input())
         Waffles.total += 1.50
-        '${:,.2f}'.format(Waffles.total * 1.06)
-        print(f'{customer} ordered {", ".join(reqs)}, and {Waffles.secret_order(secret)}. The total is ${Waffles.total}. Thank you for coming!')
+        Waffles.total = '${:,.2f}'.format(Waffles.total * 1.06)
+        print(f'{customer} ordered waffles with {", ".join(reqs)}, and {Waffles.secret_order(secret)}. The total is {Waffles.total}. Thank you for coming!')
       else:
-        '${:,.2f}'.format(Waffles.total * 1.06)
-        print(f'{customer} ordered {", ".join(reqs)}. The total is ${Waffles.total}. Thank you for coming!')
+        Waffles.total = '${:,.2f}'.format(Waffles.total * 1.06)
+        print(f'{customer} ordered waffles with {", ".join(reqs)}. The total is {Waffles.total}. Thank you for coming!')
     else:
-      '${:,.2f}'.format(Waffles.total * 1.06)
-      print(f'{customer} ordered {", ".join(reqs)}. The total is ${Waffles.total}. Thank you for coming!')
+      Waffles.total = '${:,.2f}'.format(Waffles.total * 1.06)
+      print(f'{customer} ordered waffles with {", ".join(reqs)}. The total is {Waffles.total}. Thank you for coming!')
     
 print('Hi')
 print('What would you like to order? Say \"that\'s it" when you\'re finished. (1 - 5)')
